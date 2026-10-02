@@ -1,0 +1,6 @@
+@_08_VuTriDung_Assignment01_HostAddress = http://localhost:5208
+
+GET {{_08_VuTriDung_Assignment01_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
