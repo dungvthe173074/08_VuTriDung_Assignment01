@@ -4,6 +4,7 @@ namespace _08_VuTriDung_Assignment01.DTOs
 {
     public class NewsArticleDTO
     {
+        [Key]
         public string NewsArticleID { get; set; } = string.Empty;
         public string? NewsTitle { get; set; }
         public string Headline { get; set; } = string.Empty;
