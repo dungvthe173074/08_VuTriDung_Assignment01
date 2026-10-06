@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // 1. Configure DbContext
 builder.Services.AddDbContext<FUNewsManagementDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("FUNewsManagementDB")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MyCnn")));
 
 // 2. Register Repositories
 builder.Services.AddScoped<ISystemAccountRepository, SystemAccountRepository>();

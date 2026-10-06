@@ -28,8 +28,7 @@ namespace _08_VuTriDung_Assignment01.Models
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
                 var config = builder.Build();
-                var connectionString = config.GetConnectionString("FUNewsManagementDB") 
-                    ?? "Server=(local);Database=FUNewsManagement;Trusted_Connection=True;TrustServerCertificate=True;";
+                var connectionString = config.GetConnectionString("MyCnn");
                 optionsBuilder.UseSqlServer(connectionString);
             }
         }
